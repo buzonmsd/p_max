@@ -1,5 +1,4 @@
 #maindiv{
-  border: 2px solid black;
   overflow: hidden;
   white-space: nowrap;
   content:url(marquee.jpg);
@@ -13,16 +12,6 @@ div.image {
    margin:0;
 }​
 
-#div1 {
-  display: inline-block;
-  animation: marquee 10s linear infinite;
-}
-
-#div2 {
-  display: inline-block;
-  animation: marquee2 10s linear infinite;
-  animation-delay: 5s;
-}
 
 @keyframes marquee {
   from {
@@ -30,14 +19,5 @@ div.image {
   }
   to {
     transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee2 {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-200%);
   }
 }
